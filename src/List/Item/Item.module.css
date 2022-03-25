@@ -1,0 +1,24 @@
+.item{
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+}
+.item:last-child{
+    border: none;
+}
+.item_active{
+    background-color: antiquewhite;
+}
+.item_highlight{
+    animation: appear 3s;
+}
+
+@keyframes appear {
+    from {
+        background-color: darkseagreen;
+    }
+
+    to {
+        background-color: #FFF;
+    }
+}

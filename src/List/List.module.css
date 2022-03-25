@@ -1,0 +1,7 @@
+.list{
+    height: 300px;
+    border: 1px solid #CCC;
+    overflow: scroll;
+    border-radius: 4px;
+    width: 100%;
+}
