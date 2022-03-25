@@ -1,0 +1,131 @@
+{
+    "root": true,
+    "ignorePatterns": [
+        "*.test.tsx",
+        "*.test.ts",
+        "**/test/*.ts"
+    ],
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-typescript",
+        "plugin:react-hooks/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "max-classes-per-file": 0,
+        "max-len": [
+            "warn",
+            200
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "radix": 0,
+        "import/extensions": 0,
+        "no-underscore-dangle": 0,
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/require-default-props": 0,
+        "react/jsx-indent-props": [
+            "error",
+            "first"
+        ],
+        "react/jsx-props-no-spreading": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/media-has-caption": 0,
+        "@typescript-eslint/explicit-function-return-type": [
+            "error"
+        ],
+        "@typescript-eslint/type-annotation-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true,
+                "overrides": {
+                    "arrow": {
+                        "before": true,
+                        "after": true
+                    }
+                }
+            }
+        ],
+        "@typescript-eslint/typedef": [
+            "error",
+            {
+                "arrowParameter": true,
+                "parameter": true,
+                "memberVariableDeclaration": true
+            }
+        ],
+        "@typescript-eslint/comma-dangle": [
+            "error",
+            "never"
+        ],
+        "@typescript-eslint/object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "variable",
+                "format": [
+                    "snake_case",
+                    "UPPER_CASE",
+                    "PascalCase",
+                    "camelCase"
+                ],
+                "leadingUnderscore": "allow",
+                "trailingUnderscore": "allow"
+            },
+            {
+                "selector": "function",
+                "format": [
+                    "camelCase",
+                    "PascalCase"
+                ],
+                "leadingUnderscore": "allow",
+                "trailingUnderscore": "allow"
+            }
+        ],
+        "@typescript-eslint/space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "never",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "no-plusplus": 0,
+        "no-restricted-syntax": 0,
+        "import/prefer-default-export": 0,
+        "class-methods-use-this": 0,
+        "react-hooks/exhaustive-deps": ["error"],
+        "@typescript-eslint/no-unused-vars": ["error", {"argsIgnorePattern": "query_params"}],
+        "@typescript-eslint/no-empty-function": ["error", { "allow": ["asyncMethods", "methods"] }],
+        "import/no-extraneous-dependencies": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {},
+            "webpack": {}
+        }
+    }
+}
